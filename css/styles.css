@@ -5,6 +5,26 @@ body {
 
 }
 
+.container {
+    position: relative;
+    background: linear-gradient(15deg, #fff, #E5F1F7, #E5F1F7, #5993AE, #363F6E, #10113C, #10113C, #1F0E3C);
+    background-size: 400% 400%;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+    animation: sky 20s ease-out 8s 1 both;
+}
+
+@keyframes sky {
+    0% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
+
 .countdown {
     opacity: 0;
     font-family: 'Rubik', sans-serif;
@@ -58,26 +78,6 @@ body {
     }
     100% {
         opacity: 1;
-    }
-}
-
-.container {
-    position: relative;
-    background: linear-gradient(15deg, #fff, #E5F1F7, #E5F1F7, #5993AE, #363F6E, #10113C, #10113C, #1F0E3C);
-    background-size: 400% 400%;
-    height: 100vh;
-    width: 100%;
-    top: 0;
-    overflow: hidden;
-    animation: sky 20s ease-out 8s 1 both;
-}
-
-@keyframes sky {
-    0% {
-        background-position: 100% 100%;
-    }
-    100% {
-        background-position: 0 0;
     }
 }
 
